@@ -1,0 +1,13 @@
+<h2>All adverts</h2>
+<%@adverts.each do |adv|%>
+	<%=link_to adv.title, advert_path(adv), :remote =>true%> <br>
+<%end%><br>
+<div id="advert_details"></div><br>
+<%if user_signed_in?%>
+	<%=link_to "New advert", new_advert_path%>
+
+	<%else%>
+		Please signed_in to add your advert
+		<%=link_to "Sign_in", new_user_session_path%>
+
+<%end%>

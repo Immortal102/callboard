@@ -1,0 +1,5 @@
+<h2>All adverts</h2>
+<%@adverts.each do |adv|%>
+	<%=link_to adv.title, edit_admin_path(adv)%> 
+	</i><%=link_to "____delete #{adv.title}", admin_path(adv), :method => :delete,  confirm: "Are you really want to delete #{adv.title}?"%><br>
+<%end%><br>

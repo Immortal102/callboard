@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap_and_overrides
+ *= require_self
+ *= require_tree .
+ */
+
+
+/*body, html {
+margin:0px;
+padding:0px;
+}
+#maket {
+width:800px;
+margin:0 auto;
+}
+#header{
+background-color:#C0C000;
+width: 100%;
+text-align: right;
+}
+#left{
+background-color:#00C0C0;
+width:25%;
+float:left;
+}
+#content{
+background-color:#8080FF;
+width: 75%;
+float:left;
+}
+#footer{
+background-color:#FFC0FF;
+width: 100%;
+clear: left;
+text-align: center;
+}*/

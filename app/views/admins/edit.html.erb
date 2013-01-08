@@ -1,0 +1,14 @@
+<h3>Edit <%=@advert.title%></h3>
+<%=form_for :update,:url => admin_path, :method => :put do |f|%>
+<%=f.label :title%><br>
+<%=f.text_field :title, :value =>@advert.title%><br>
+<%=f.label :description%><br>
+<%=f.text_field :description, :value =>@advert.description%><br>
+<%=f.label :city%><br>
+<%=f.text_field :city, :value =>@advert.city%><br>
+<%=f.label :address%><br>
+<%=f.text_field :address, :value =>@advert.address%><br>
+<%=f.label :email%><br>
+<%=f.text_field :email, :value =>@advert.email%><br>
+<%=f.submit "Update"%>
+<%end%>

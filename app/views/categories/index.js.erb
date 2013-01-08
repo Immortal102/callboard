@@ -1,0 +1,1 @@
+$('#categories').html('<%@categories.each do |cat|%><%=link_to cat.title, advert_path(cat)%><br><%end%>');

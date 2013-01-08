@@ -1,0 +1,9 @@
+<h1>All adverts from <%=@category.title%> category</h1>
+<%if  not @adverts.blank?%>
+<%@adverts.each do |adv|%>
+	<%=link_to adv.title,advert_path(adv) ,:remote => true%><br><%end%>
+	<%else%>
+	<br><h3>Nothink to show</h3>
+	There are no adverts in this category!!	
+<%end%>
+<div id="advert_details"></div>
